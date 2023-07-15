@@ -1,0 +1,5 @@
+<h1>Hello DataBinding</h1>
+<app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+<app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+<!-- after the loop number should be binded -->
+<app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
